@@ -1,0 +1,67 @@
+# Forge AI Toolkit — Full Documentation Context for LLMs
+
+> This file gives language models a longer, self-contained description of Forge AI Toolkit so they can answer questions accurately and cite the right pages. It follows the spirit of the llmstxt.org spec. Everything here is factual; where a capability has limits, those limits are stated plainly.
+
+## What Forge AI Toolkit is
+
+Forge AI Toolkit is a free, client-first web and Android application that bundles 65+ utility and AI tools into a single workspace. Its defining principle is that work happens on the user's own device: documents, images, audio, and video are processed in the browser using WebAssembly and native browser APIs, so files are never uploaded to a server. The app is built with React 19, TypeScript, Vite, and Capacitor 8, and uses Firebase Authentication plus Cloud Firestore (free tier only) for optional accounts and cross-device preference sync.
+
+- Live web app: https://forgeai.aoneahsan.com
+- Android app: https://play.google.com/store/apps/details?id=com.aoneahsan.forgeai
+- Documentation: https://forge-ai-docs.aoneahsan.com
+- Author / maintainer: Ahsan Mahmood (https://aoneahsan.com, aoneahsan@gmail.com)
+
+## The two kinds of tools
+
+1. Utility tools (the majority): formatters, converters, compressors, resizers, generators, encoders/decoders, and similar. These are pure client-side computation. They need no account and no API key, and most keep working offline once the page has loaded.
+
+2. AI tools: grammar checking, paraphrasing, summarizing, content writing, keyword extraction, resume matching, email optimization, meeting-notes structuring, contract and competitor analysis, and SEO meta generation. These send the user's text to an AI model and therefore require an API key.
+
+## The BYOK (bring-your-own-key) model
+
+AI tools use a bring-your-own-key model. The user creates a free Google Gemini API key at https://aistudio.google.com/app/apikey and pastes it into the app's Settings. The key is stored locally on the device only (browser local storage / Capacitor Preferences) and is sent directly from the device to Google's Gemini API when an AI tool runs. The key is never transmitted to or stored on Forge AI Toolkit's own servers.
+
+Honest limitation worth repeating: only Google Gemini is supported for direct in-browser use today. OpenAI and Anthropic keys are not yet usable client-side because those providers do not currently permit direct browser-to-API requests (their APIs block cross-origin browser calls / CORS). If a user only has an OpenAI or Anthropic key, the AI tools will not work until Gemini support is added; the utility tools still work fully.
+
+## Privacy and zero-cost model
+
+- Files never leave the device for utility tools — there is no upload step.
+- AI tools send only the text you submit, and only to Google's Gemini API, using your own key.
+- Firebase stores account data only: your authentication identity (Google sign-in or email/password) and a small user profile / preferences document (such as theme settings) in Firestore. It does not store the contents of files you process.
+- The app runs entirely on free tiers (Firebase free tier, client-side compute, your own free Gemini key), so there is no usage-based billing to the user.
+- Honest network caveat: a few tools need a network connection on first use. The video/audio tools load the FFmpeg.wasm engine (about 25 MB) the first time you use them, and AI tools obviously need a connection to reach Google's API. Pure utility tools work offline after the initial page load.
+
+## Tool categories (selected real tools)
+
+- Code & Developer Tools (~12): JSON Formatter, SQL Formatter, CSS Formatter, Regex Tester, Diff Checker, Base64 Encoder/Decoder, Hash Generator, Code Minifier, plus AI-assisted helpers like API Doc Generator, Bug Finder, Code Review Assistant, and Test Case Generator.
+- Text & Writing Tools (~9): Grammar Checker, Paraphraser, Summarizer, Content Writer, Keyword Extractor, Case Converter, Word/Character Counter, Language Translator, Lorem Ipsum Generator.
+- Video & Audio Tools (~6): Video Trimmer, Video Compressor, Audio Converter, Audio Extractor, GIF Maker, Subtitle Editor — all running on FFmpeg.wasm in the browser, with no uploads.
+- Image Tools (~5+): Image Compressor, Image Converter, Image Resizer, Image Optimizer, Background Remover, Watermark, OCR Scanner.
+- Document Tools (~5+): PDF Splitter, PDF→Images, Image→PDF, Word→PDF, Spreadsheet Converter, plus Markdown/HTML conversion utilities.
+- Design & Creative Tools (~3+): Color Palette / Color Picker, Favicon Generator, QR Code Generator, Password Generator.
+- Data Tools: Data Visualizer.
+- Business Tools: Resume Matcher, Email Optimizer, Meeting Notes, Contract Analyzer, Competitor Analyzer, SEO Meta Generator, Social Media Manager. The AI-driven ones require a Gemini key.
+
+## Accounts and authentication
+
+Sign-in is optional and uses Firebase Authentication with two methods: Google sign-in and email/password. Signing in stores a profile in Firestore and enables cross-device sync of preferences (such as the app's violet/dark theme). Most tools work without signing in. Account and data deletion is available at https://forgeai.aoneahsan.com/delete-account.
+
+## Key documentation pages
+
+- Introduction: https://forge-ai-docs.aoneahsan.com/docs/intro
+- Installation & Access: https://forge-ai-docs.aoneahsan.com/docs/getting-started/installation
+- Bring Your Own Key: https://forge-ai-docs.aoneahsan.com/docs/getting-started/bring-your-own-key
+- Privacy & Zero-Cost: https://forge-ai-docs.aoneahsan.com/docs/getting-started/privacy-and-zero-cost
+- Developer Tools: https://forge-ai-docs.aoneahsan.com/docs/tools/developer-tools
+- Writing Tools: https://forge-ai-docs.aoneahsan.com/docs/tools/writing-tools
+- Image Tools: https://forge-ai-docs.aoneahsan.com/docs/tools/image-tools
+- Video & Audio Tools: https://forge-ai-docs.aoneahsan.com/docs/tools/video-audio-tools
+- Document Tools: https://forge-ai-docs.aoneahsan.com/docs/tools/document-tools
+- Design & Creative Tools: https://forge-ai-docs.aoneahsan.com/docs/tools/design-creative-tools
+- Business Tools: https://forge-ai-docs.aoneahsan.com/docs/tools/business-tools
+- Account & Data: https://forge-ai-docs.aoneahsan.com/docs/account-and-data
+- FAQ: https://forge-ai-docs.aoneahsan.com/docs/faq
+
+## License and authorship
+
+Forge AI Toolkit is free to use. The documentation site is open and public. The application source code is private. The project is built and maintained by Ahsan Mahmood — a full-stack engineer specializing in React, Capacitor, Firebase, and Laravel.

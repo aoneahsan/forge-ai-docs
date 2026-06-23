@@ -1,0 +1,91 @@
+/**
+ * Forge AI Toolkit — brand palette
+ * Primary: violet (#7c3aed). Brand gradient: violet → purple.
+ * Default appearance is dark (matches the app).
+ */
+
+:root {
+  --ifm-color-primary: #7c3aed;
+  --ifm-color-primary-dark: #6d28d9;
+  --ifm-color-primary-darker: #6321cc;
+  --ifm-color-primary-darkest: #521ba8;
+  --ifm-color-primary-light: #8b5cf6;
+  --ifm-color-primary-lighter: #9d75f8;
+  --ifm-color-primary-lightest: #b89bfa;
+
+  --ifm-color-secondary: #a855f7;
+  --ifm-color-success: #10b981;
+  --ifm-color-info: #8b5cf6;
+  --ifm-color-warning: #f59e0b;
+  --ifm-color-danger: #ef4444;
+
+  --ifm-code-font-size: 92%;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --ifm-heading-font-weight: 700;
+
+  --docusaurus-highlighted-code-line-bg: rgba(124, 58, 237, 0.10);
+
+  /* Soft accent surfaces used by callouts + hero washes */
+  --forge-surface-accent: rgba(168, 85, 247, 0.07);
+  --forge-surface-brand: rgba(124, 58, 237, 0.07);
+  --forge-gradient: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+}
+
+/* Dark mode — the default appearance for this site (matches the app) */
+[data-theme='dark'] {
+  --ifm-color-primary: #a78bfa;
+  --ifm-color-primary-dark: #8f69f8;
+  --ifm-color-primary-darker: #8358f7;
+  --ifm-color-primary-darkest: #6325f4;
+  --ifm-color-primary-light: #bfadfc;
+  --ifm-color-primary-lighter: #cbbefc;
+  --ifm-color-primary-lightest: #e9e2fe;
+
+  --ifm-background-color: #0e0b1a;
+  --ifm-background-surface-color: #171327;
+
+  --docusaurus-highlighted-code-line-bg: rgba(167, 139, 250, 0.18);
+
+  --forge-surface-accent: rgba(168, 85, 247, 0.12);
+  --forge-surface-brand: rgba(124, 58, 237, 0.12);
+}
+
+/* ---------------------------------------------------------------------------
+ * Subtle entrance animation on body headings (CSS-only, respects reduced motion)
+ * ------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  .markdown > h1,
+  .markdown > h2 {
+    animation: forge-fade-up 420ms ease-out both;
+  }
+  @keyframes forge-fade-up {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * Code block polish
+ * ------------------------------------------------------------------------- */
+.theme-code-block {
+  border-radius: 10px;
+}
+
+/* ---------------------------------------------------------------------------
+ * Author callout used at the bottom of long pages
+ * ------------------------------------------------------------------------- */
+.forge-author-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 12px;
+  background: var(--forge-surface-brand);
+  margin: 1.5rem 0;
+}
+
+.forge-author-card a {
+  font-weight: 600;
+}

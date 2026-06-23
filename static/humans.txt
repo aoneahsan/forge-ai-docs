@@ -1,0 +1,30 @@
+/* TEAM */
+
+Maintainer + Author: Ahsan Mahmood
+Site: https://aoneahsan.com
+Email: aoneahsan@gmail.com
+LinkedIn: https://linkedin.com/in/aoneahsan
+GitHub: https://github.com/aoneahsan
+npm: https://www.npmjs.com/~aoneahsan
+Location: Pakistan
+
+/* PRODUCT */
+
+App: Forge AI Toolkit
+Live: https://forgeai.aoneahsan.com
+Android: https://play.google.com/store/apps/details?id=com.aoneahsan.forgeai
+Docs: https://forge-ai-docs.aoneahsan.com
+
+/* THANKS */
+
+To the FFmpeg.wasm and WebAssembly communities for making client-side media
+processing possible in the browser. To Google for a generous free Gemini API
+tier. To the Capacitor team at Ionic for the web-to-native bridge.
+
+/* SITE */
+
+Last update: 2026-06-23
+Standards: HTML5, CSS3, Markdown, JSON-LD
+Components: Docusaurus 3, React 19, TypeScript
+Hosting: Firebase Hosting + GitHub Pages
+Source: https://github.com/aoneahsan/forge-ai-docs

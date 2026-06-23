@@ -1,0 +1,11 @@
+# Security contact for Forge AI Toolkit documentation
+# https://forge-ai-docs.aoneahsan.com/.well-known/security.txt
+
+Contact: mailto:aoneahsan@gmail.com
+Contact: https://aoneahsan.com
+Preferred-Languages: en
+Canonical: https://forge-ai-docs.aoneahsan.com/.well-known/security.txt
+
+# This documentation site is a static, public Docusaurus build with no
+# server-side logic and no user data. Report issues with the live app
+# (https://forgeai.aoneahsan.com) or this docs site to the contact above.

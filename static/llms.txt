@@ -1,0 +1,40 @@
+# Forge AI Toolkit — Documentation Index
+
+> Forge AI Toolkit is a client-first AI and utility workspace with 65+ free, privacy-first tools. Every tool runs 100% in the browser — files never leave the user's device, and nothing is uploaded to a server. AI-powered writing tools use a bring-your-own-key (BYOK) model: the user pastes their own free Google Gemini API key, which is stored locally only. Live app: https://forgeai.aoneahsan.com · Android: https://play.google.com/store/apps/details?id=com.aoneahsan.forgeai · Author: Ahsan Mahmood (https://aoneahsan.com).
+
+## About
+
+Forge AI Toolkit (https://forgeai.aoneahsan.com) is built with React 19, TypeScript, Vite, and Capacitor 8 (web + Android), with Firebase Authentication and Firestore on the free tier for accounts and cross-device preferences. The tools are organized into Code & Developer, Text & Writing, Image, Video/Audio, Document, Design & Creative, Data, and Business categories. Utility tools (formatters, converters, compressors, generators) work fully offline once loaded. AI tools (grammar checker, paraphraser, summarizer, content writer, resume matcher, etc.) require a free Google Gemini API key supplied by the user. Honest limitation: only Google Gemini works directly in the browser today, because other providers (OpenAI, Anthropic) do not currently allow direct browser-to-API calls (CORS). Video/audio tools run on FFmpeg.wasm, whose engine downloads about 25 MB on first use.
+
+This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec. The companion `llms-full.txt` carries longer-form content.
+
+## Getting Started
+
+- [Introduction](https://forge-ai-docs.aoneahsan.com/docs/intro): What Forge AI Toolkit is, the client-side + BYOK model, platforms, and honest limits.
+- [Installation & Access](https://forge-ai-docs.aoneahsan.com/docs/getting-started/installation): Use it on the web, install the Android app, or sign in to sync preferences.
+- [Bring Your Own Key (BYOK)](https://forge-ai-docs.aoneahsan.com/docs/getting-started/bring-your-own-key): Get a free Google Gemini API key, paste it in Settings, and which tools need it.
+- [Privacy & Zero-Cost Model](https://forge-ai-docs.aoneahsan.com/docs/getting-started/privacy-and-zero-cost): Client-side processing, what Firebase stores, and local-only API keys.
+
+## Tools by Category
+
+- [Developer Tools](https://forge-ai-docs.aoneahsan.com/docs/tools/developer-tools): JSON/SQL/CSS formatters, Regex Tester, Diff Checker, Base64, Hash, Code Minifier, and AI-assisted code helpers.
+- [Writing Tools](https://forge-ai-docs.aoneahsan.com/docs/tools/writing-tools): Grammar Checker, Paraphraser, Summarizer, Content Writer, Keyword Extractor, Case Converter, Word Counter, Translator, Lorem Ipsum.
+- [Image Tools](https://forge-ai-docs.aoneahsan.com/docs/tools/image-tools): Compressor, Converter, Resizer, Optimizer, Background Remover, Watermark, OCR Scanner.
+- [Video & Audio Tools](https://forge-ai-docs.aoneahsan.com/docs/tools/video-audio-tools): Video Trimmer/Compressor, Audio Converter/Extractor, GIF Maker, Subtitle Editor — all via FFmpeg.wasm in-browser.
+- [Document Tools](https://forge-ai-docs.aoneahsan.com/docs/tools/document-tools): PDF Splitter, PDF→Images, Image→PDF, Word→PDF, Spreadsheet Converter, Markdown/HTML tools.
+- [Design & Creative Tools](https://forge-ai-docs.aoneahsan.com/docs/tools/design-creative-tools): Color Palette/Picker, Favicon Generator, QR Code, Password Generator.
+- [Business Tools](https://forge-ai-docs.aoneahsan.com/docs/tools/business-tools): Resume Matcher, Email Optimizer, Meeting Notes, Contract Analyzer, Competitor Analyzer, SEO Meta Generator, Social Media Manager (AI tools need a Gemini key).
+
+## Account & FAQ
+
+- [Account & Data](https://forge-ai-docs.aoneahsan.com/docs/account-and-data): Sign-in options, what is stored in Firestore, and how to delete an account.
+- [FAQ](https://forge-ai-docs.aoneahsan.com/docs/faq): Is it free? Do you see my files? Do I need an API key? Which AI provider? Offline? Mobile?
+
+## Product links
+
+- Live app: https://forgeai.aoneahsan.com
+- Google Play: https://play.google.com/store/apps/details?id=com.aoneahsan.forgeai
+- Privacy Policy: https://forgeai.aoneahsan.com/privacy
+- Terms: https://forgeai.aoneahsan.com/terms
+- Delete account: https://forgeai.aoneahsan.com/delete-account
+- Docs source: https://github.com/aoneahsan/forge-ai-docs

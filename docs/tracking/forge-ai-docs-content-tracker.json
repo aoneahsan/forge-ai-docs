@@ -1,0 +1,32 @@
+{
+  "$schema": "forge-ai-docs-content-tracker",
+  "project": "forge-ai-docs",
+  "description": "Content + page status tracker for the Forge AI Toolkit documentation site. 'complete' = baseline page written and honest; 'planned' = future deep-dive page not yet created.",
+  "liveApp": "https://forgeai.aoneahsan.com",
+  "playStore": "https://play.google.com/store/apps/details?id=com.aoneahsan.forgeai",
+  "docsUrl": "https://forge-ai-docs.aoneahsan.com",
+  "stack": "Docusaurus 3 (classic preset + Mermaid), React 19, TypeScript, yarn",
+  "lastUpdated": "2026-06-23",
+  "pages": [
+    { "id": "intro", "path": "docs/intro.md", "title": "What is Forge AI Toolkit?", "status": "complete", "hasFaq": true },
+    { "id": "getting-started/installation", "path": "docs/getting-started/installation.md", "title": "Installation & Access", "status": "complete", "hasFaq": true },
+    { "id": "getting-started/bring-your-own-key", "path": "docs/getting-started/bring-your-own-key.md", "title": "Bring Your Own Key (BYOK)", "status": "complete", "hasFaq": true },
+    { "id": "getting-started/privacy-and-zero-cost", "path": "docs/getting-started/privacy-and-zero-cost.md", "title": "Privacy & Zero-Cost Model", "status": "complete", "hasFaq": true },
+    { "id": "tools/developer-tools", "path": "docs/tools/developer-tools.md", "title": "Developer Tools", "status": "complete", "hasFaq": true },
+    { "id": "tools/writing-tools", "path": "docs/tools/writing-tools.md", "title": "Text & Writing Tools", "status": "complete", "hasFaq": true },
+    { "id": "tools/image-tools", "path": "docs/tools/image-tools.md", "title": "Image Tools", "status": "complete", "hasFaq": true },
+    { "id": "tools/video-audio-tools", "path": "docs/tools/video-audio-tools.md", "title": "Video & Audio Tools", "status": "complete", "hasFaq": true },
+    { "id": "tools/document-tools", "path": "docs/tools/document-tools.md", "title": "Document Tools", "status": "complete", "hasFaq": true },
+    { "id": "tools/design-creative-tools", "path": "docs/tools/design-creative-tools.md", "title": "Design & Creative Tools", "status": "complete", "hasFaq": true },
+    { "id": "tools/business-tools", "path": "docs/tools/business-tools.md", "title": "Business Tools", "status": "complete", "hasFaq": true },
+    { "id": "account-and-data", "path": "docs/account-and-data.md", "title": "Account & Data", "status": "complete", "hasFaq": true },
+    { "id": "faq", "path": "docs/faq.md", "title": "FAQ", "status": "complete", "hasFaq": true }
+  ],
+  "planned": [
+    { "id": "tools/per-tool-pages", "title": "Individual per-tool deep-dive pages (one page per tool, definition-first + FAQ + HowTo schema)", "status": "planned" },
+    { "id": "guides/offline-and-pwa", "title": "Guide: using Forge AI Toolkit offline / installing as a PWA", "status": "planned" },
+    { "id": "guides/gemini-quota-and-limits", "title": "Guide: understanding Google Gemini free-tier quota and limits", "status": "planned" },
+    { "id": "data-tools", "title": "Dedicated Data Tools category page (Data Visualizer + future data tools)", "status": "planned" },
+    { "id": "changelog", "title": "Changelog / What's New page mirroring the app release notes", "status": "planned" }
+  ]
+}

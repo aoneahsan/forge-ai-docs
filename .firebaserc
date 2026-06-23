@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "native-update-docs"
+  },
+  "targets": {
+    "native-update-docs": {
+      "hosting": {
+        "forge-ai-docs": [
+          "forge-ai-docs"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
