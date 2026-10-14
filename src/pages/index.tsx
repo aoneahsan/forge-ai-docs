@@ -17,11 +17,11 @@ type Feature = {
 
 const FEATURES: Feature[] = [
   {
-    title: '100% client-side',
-    body: 'Every tool runs in your browser. Your files, text, images, and videos are processed on your own device — nothing is uploaded to any server.',
+    title: 'Local processing',
+    body: 'Many file and utility tools process data on your device. Account features use Firebase, and AI requests go to Google Gemini with your key.',
   },
   {
-    title: '65+ free tools',
+    title: '58+ free tools',
     body: 'Formatters, converters, compressors, generators, and more across code, text, image, video/audio, document, and design categories. Free to use.',
   },
   {
@@ -103,8 +103,8 @@ export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} — 65+ free, privacy-first tools`}
-      description="Documentation for Forge AI Toolkit: a client-first AI and utility workspace with 65+ free tools that run entirely in your browser. AI tools use your own free Google Gemini API key (BYOK)."
+      title={`${siteConfig.title} — 58+ free, privacy-first tools`}
+      description="Documentation for Forge AI Toolkit: a client-first AI and utility workspace with 58+ free tools with local utility processing. AI tools use your own free Google Gemini API key (BYOK)."
     >
       <HomepageHeader />
       <main>

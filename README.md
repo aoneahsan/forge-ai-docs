@@ -1,42 +1,18 @@
-# Forge AI Toolkit — Documentation
+# Forge AI Toolkit Docs
 
-Public documentation site for **[Forge AI Toolkit](https://forgeai.aoneahsan.com)** — a client-first AI & utility workspace with **65+ free, privacy-first tools** that run entirely in your browser.
+This public Docusaurus repository documents the private [Forge AI Toolkit app](https://forgeai.aoneahsan.com). The app includes browser-based utility tools and Google Gemini features that use a user-supplied key. Check the app source before updating a feature or privacy claim.
 
-- **Live app:** https://forgeai.aoneahsan.com
-- **Android:** [Google Play](https://play.google.com/store/apps/details?id=com.aoneahsan.forgeai)
-- **Docs:** https://forge-ai-docs.aoneahsan.com
+The current docs site is [forgeai-docs.aoneahsan.com](https://forgeai-docs.aoneahsan.com/). It is published from `main` by [the GitHub Pages workflow](.github/workflows/deploy-pages.yml). An obsolete Firebase preview script has been removed; GitHub Pages is the current deployment path.
 
-Built with [Docusaurus 3](https://docusaurus.io/). Every tool in Forge AI Toolkit runs 100% on your device — files are never uploaded. AI writing tools use your **own free Google Gemini API key** (BYOK), stored locally only.
+## Work locally
 
-## Local development
-
-This repo uses **yarn** (Node ≥18). Do not use npm or pnpm.
+Use Node 18 or newer and Yarn 4:
 
 ```bash
-yarn install        # install dependencies
-yarn start          # local dev server on http://localhost:5962
-yarn build          # production build into ./build
-yarn serve          # preview the production build on http://localhost:5963
-yarn typecheck      # tsc --noEmit
+yarn install --immutable
+yarn typecheck
+yarn build
+yarn serve
 ```
 
-## Project structure
-
-```
-docs/                  Documentation pages (intro, getting-started, tools, faq, account)
-src/                   Landing page + custom CSS (violet brand, dark default)
-static/                robots.txt, llms.txt, llms-full.txt, humans.txt, CNAME, images
-docusaurus.config.ts   Site config (title, URL, JSON-LD, navbar, footer)
-sidebars.ts            Sidebar layout
-firebase.json          Firebase Hosting config (target: forge-ai-docs)
-.github/workflows/     GitHub Pages deploy workflow
-DEPLOY.md              Deployment runbook (Firebase + GitHub Pages)
-```
-
-## Deployment
-
-See **[DEPLOY.md](./DEPLOY.md)**. Deployment is a manual/user step — the project builds to `build/` and can be hosted on Firebase Hosting or GitHub Pages.
-
-## Author
-
-Built and maintained by **[Ahsan Mahmood](https://aoneahsan.com)** — [aoneahsan@gmail.com](mailto:aoneahsan@gmail.com) · [LinkedIn](https://linkedin.com/in/aoneahsan) · [GitHub](https://github.com/aoneahsan).
+The pages live in `docs/`; `sidebars.ts` and `docusaurus.config.ts` control navigation and site metadata. Before a push, inspect the exact `build/` output in a controlled browser at desktop and mobile sizes. See [DEPLOY.md](DEPLOY.md) for the Pages release check and [AGENTS.md](AGENTS.md) for source and privacy rules.

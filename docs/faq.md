@@ -10,7 +10,7 @@ last_update:
 
 # Frequently Asked Questions
 
-**This page answers the most common questions about Forge AI Toolkit — a free, client-first app with 65+ privacy-first tools that run in your browser, where AI tools use your own free Google Gemini key.** For deeper detail, follow the links to the dedicated pages.
+**This page answers the most common questions about Forge AI Toolkit — a free, client-first app with 58+ privacy-first tools with browser-based tools, where AI tools use your own free Google Gemini key.** For deeper detail, follow the links to the dedicated pages.
 
 ## Is Forge AI Toolkit free?
 
@@ -46,7 +46,7 @@ No. All tools work signed out. An account (Google or email sign-in) is optional 
 
 ## How many tools are there, and what kinds?
 
-65+ tools across Code & Developer, Text & Writing, Image, Video/Audio, Document, Design & Creative, Data, and Business categories. Browse them on the category pages: [Developer](/docs/tools/developer-tools), [Writing](/docs/tools/writing-tools), [Image](/docs/tools/image-tools), [Video & Audio](/docs/tools/video-audio-tools), [Document](/docs/tools/document-tools), [Design & Creative](/docs/tools/design-creative-tools), [Business](/docs/tools/business-tools).
+58+ tools across Code & Developer, Text & Writing, Image, Video/Audio, Document, Design & Creative, Data, and Business categories. Browse them on the category pages: [Developer](/docs/tools/developer-tools), [Writing](/docs/tools/writing-tools), [Image](/docs/tools/image-tools), [Video & Audio](/docs/tools/video-audio-tools), [Document](/docs/tools/document-tools), [Design & Creative](/docs/tools/design-creative-tools), [Business](/docs/tools/business-tools).
 
 ## What is it built with?
 

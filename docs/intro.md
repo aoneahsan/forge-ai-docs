@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: What is Forge AI Toolkit?
-description: Forge AI Toolkit is a free, client-first web and Android app with 65+ privacy-first tools that run entirely in your browser. AI tools use your own free Google Gemini key (BYOK).
+description: Forge AI Toolkit is a free, client-first web and Android app with 58+ privacy-first tools with local utility processing. AI tools use your own free Google Gemini key (BYOK).
 keywords: [forge ai toolkit, free online tools, client-side tools, privacy-first tools, BYOK, google gemini, browser tools, capacitor app]
 last_update:
   date: 2026-06-23
@@ -10,7 +10,7 @@ last_update:
 
 # What is Forge AI Toolkit?
 
-**Forge AI Toolkit is a free, client-first web and Android app that bundles 65+ utility and AI tools into a single privacy-first workspace, where every tool runs inside your own browser instead of on a remote server.** When you compress an image, trim a video, format JSON, or generate a QR code, the work happens on your device — your files are never uploaded anywhere. The AI-powered writing tools use a bring-your-own-key model: you paste your own free Google Gemini API key, and it stays on your device.
+**Forge AI Toolkit is a free, client-first web and Android app that bundles 58+ utility and AI tools into a single privacy-first workspace, with many utility tools running inside your browser. Account features use Firebase and AI requests go to Google Gemini.** When you compress an image, trim a video, format JSON, or generate a QR code, the work happens on your device — your files are never uploaded anywhere. The AI-powered writing tools use a bring-your-own-key model: you paste your own free Google Gemini API key, and it stays on your device.
 
 You can use it right now in any browser at **[forgeai.aoneahsan.com](https://forgeai.aoneahsan.com)**, or install the Android app from **[Google Play](https://play.google.com/store/apps/details?id=com.aoneahsan.forgeai)**. It is built and maintained by [Ahsan Mahmood](https://aoneahsan.com).
 
@@ -38,7 +38,7 @@ The AI tools call **Google Gemini** directly from your browser using a key you s
 
 One honest limitation deserves to be stated up front: **only Google Gemini works directly in the browser today.** OpenAI and Anthropic keys are not yet usable here, because those providers do not currently allow direct browser-to-API requests (their endpoints block cross-origin browser calls). If you only have an OpenAI or Anthropic key, the AI tools will not work until Gemini support is set up — but every utility tool still works without any key. Full details are on the [Bring Your Own Key](/docs/getting-started/bring-your-own-key) page.
 
-## The 65+ tools at a glance
+## The 58+ tools at a glance
 
 The tools are grouped into categories. Each category has its own page with the full list, how each tool works, and use cases:
 

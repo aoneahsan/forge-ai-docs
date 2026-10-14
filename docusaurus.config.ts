@@ -17,11 +17,10 @@ const DOCS_URL = 'https://forgeai-docs.aoneahsan.com';
 const config: Config = {
   title: 'Forge AI Toolkit Docs',
   tagline:
-    'Client-first AI & utility workspace with 65+ free, privacy-first tools.',
+    'Client-first AI & utility workspace with 58+ free, privacy-first tools.',
   favicon: 'img/favicon.svg',
 
-  // Production URL — served from Firebase Hosting site `forge-ai-docs`
-  // and/or GitHub Pages with a custom domain (static/CNAME).
+  // Production URL — GitHub Pages with the custom domain in static/CNAME.
   url: DOCS_URL,
   baseUrl: '/',
 
@@ -76,7 +75,7 @@ const config: Config = {
         name: 'Forge AI Toolkit Documentation',
         url: DOCS_URL,
         description:
-          'Documentation for Forge AI Toolkit — a client-first AI and utility workspace with 65+ free, privacy-first tools that run entirely in your browser. AI writing tools use your own free Google Gemini API key (BYOK). Author: Ahsan Mahmood.',
+          'Documentation for Forge AI Toolkit — a client-first AI and utility workspace with 58+ free, privacy-first tools with local utility processing and browser-based AI flows. AI writing tools use your own free Google Gemini API key (BYOK). Author: Ahsan Mahmood.',
         inLanguage: 'en',
         publisher: {
           '@type': 'Person',
@@ -117,7 +116,7 @@ const config: Config = {
           url: 'https://aoneahsan.com',
         },
         description:
-          'A client-first AI and utility workspace with 65+ free tools across code, text, image, video/audio, document, and design categories. Every tool runs 100% in your browser — files never leave your device. AI writing tools use your own free Google Gemini API key (BYOK), stored locally only.',
+          'A client-first AI and utility workspace with 58+ free tools across code, text, image, video/audio, document, and design categories. Many file utilities process data in the browser; account features use Firebase and AI calls go to Gemini. AI writing tools use your own free Google Gemini API key (BYOK), stored locally only.',
       }),
     },
     {
@@ -203,7 +202,7 @@ const config: Config = {
       {
         name: 'description',
         content:
-          'Documentation for Forge AI Toolkit — a client-first AI and utility workspace with 65+ free, privacy-first tools that run entirely in your browser. AI tools use your own free Google Gemini API key (BYOK). Built by Ahsan Mahmood.',
+          'Documentation for Forge AI Toolkit — a client-first AI and utility workspace with 58+ free, privacy-first tools with local utility processing and browser-based AI flows. AI tools use your own free Google Gemini API key (BYOK). Built by Ahsan Mahmood.',
       },
       {
         name: 'keywords',
@@ -330,7 +329,7 @@ const config: Config = {
     announcementBar: {
       id: 'forge-ai-live',
       content:
-        '⚡ Forge AI Toolkit is live — 65+ free, privacy-first tools that run in your browser. <a target="_blank" rel="noopener noreferrer" href="https://forgeai.aoneahsan.com">Open the app →</a>',
+        '⚡ Forge AI Toolkit is live — browse 58+ tools. <a target="_blank" rel="noopener noreferrer" href="https://forgeai.aoneahsan.com">Open the app →</a>',
       backgroundColor: '#7c3aed',
       textColor: '#ffffff',
       isCloseable: true,
